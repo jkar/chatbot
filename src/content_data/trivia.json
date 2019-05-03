@@ -1,0 +1,318 @@
+[
+  {
+    "id": "trivia-U_3sZz",
+    "formData": {
+      "question": "There is one document relevant to your search",
+      "good": "{{event.user.title1}}",
+      "bad": [
+        "This answer does not cover me, i ll try again"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:20:47.638Z"
+  },
+  {
+    "id": "trivia-DEiIPP",
+    "formData": {
+      "question": "There are two documents relevant to your search",
+      "good": "These answers does not cover me, i ll try again",
+      "bad": [
+        "{{event.user.title1}}",
+        "{{event.user.title2}}"
+        
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:21:33.077Z"
+  },
+  {
+    "id": "trivia-wImL3f",
+    "formData": {
+      "question": "Three documents are possibly what you need",
+      "good": "These answers does not cover me, i ll try again",
+      "bad": [
+        "{{event.user.title1}}",
+        "{{event.user.title2}}",
+        "{{event.user.title3}}"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:23:02.775Z"
+  },
+  {
+    "id": "trivia-zsfQQm",
+    "formData": {
+      "question": "Theese four documents are found to be related to your search",
+      "good": "These answers does not cover me, i ll try again",
+      "bad": [
+        "{{event.user.title1}}",
+        "{{event.user.title2}}",
+        "{{event.user.title3}}",
+        "{{event.user.title4}}"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:24:37.649Z"
+  },
+  {
+    "id": "trivia-dd3RQE",
+    "formData": {
+      "question": "Here is a list of five documents which may cover your needs",
+      "good": "These answers does not cover me, i ll try again",
+      "bad": [
+        "{{event.user.title1}}",
+        "{{event.user.title2}}",
+        "{{event.user.title3}}",
+        "{{event.user.title4}}",
+        "{{event.user.title5}}"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:26:16.900Z"
+  },
+  {
+    "id": "trivia-9Jn6J2",
+    "formData": {
+      "question": "Six documents are relevant to your request",
+      "good": "event.user.title1",
+      "bad": ["event.user.title2",
+        "event.user.title3",
+        "event.user.title4",
+        "event.user.title5",
+        "event.user.title6"
+        
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:27:10.562Z"
+  },
+   {
+    "id": "trivia-1Ju5J7",
+    "formData": {
+      "question": "for which language you are interested to find documents?",
+      "good": "NEXT QUESTION",
+      "bad": [
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:27:10.562Z"
+  },
+   {
+    "id": "trivia-2erwa3",
+    "formData": {
+      "question": "There is one language to find documents",
+      "good": "Skip question",
+      "bad": [
+        "{{event.user.lang1}}"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:27:10.562Z"
+  },
+  {
+    "id": "trivia-qf4w5b",
+    "formData": {
+      "question": "There are two languages to find documents",
+      "good": "Skip question",
+      "bad": [
+        "{{event.user.lang1}}",
+        "{{event.user.lang2}}"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:27:10.562Z"
+  },
+  {
+    "id": "trivia-qr4e2e",
+    "formData": {
+      "question": "There are three languages to find documents",
+      "good": "Skip question",
+      "bad": [
+        "{{event.user.lang1}}",
+        "{{event.user.lang2}}",
+        "{{event.user.lang3}}"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:27:10.562Z"
+  },
+  {
+    "id": "trivia-ar4d7w",
+    "formData": {
+      "question": "There are many languages to find documents, (three possible ones are)",
+      "good": "Skip question",
+      "bad": [
+        "{{event.user.lang1}}",
+        "{{event.user.lang2}}",
+        "{{event.user.lang3}}"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:27:10.562Z"
+  },
+  {
+    "id": "trivia-2Jw6E9",
+    "formData": {
+      "question": "For which nation you are interested to find documents?",
+      "good": "NEXT QUESTION",
+      "bad": [
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:27:10.562Z"
+  },
+  {
+    "id": "trivia-sz4dq3",
+    "formData": {
+      "question": "There is one nation to find documents",
+      "good": "Skip question",
+      "bad": [
+        "{{event.user.nat1}}"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:27:10.562Z"
+  },
+  {
+    "id": "trivia-wz1sq5",
+    "formData": {
+      "question": "There are two nations to find documents",
+      "good": "Skip question",
+      "bad": [
+        "{{event.user.nat1}}",
+        "{{event.user.nat2}}"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:27:10.562Z"
+  },
+   {
+    "id": "trivia-3wzad8",
+    "formData": {
+      "question": "There are three nations to find documents",
+      "good": "Skip question",
+      "bad": [
+        "{{event.user.nat1}}",
+        "{{event.user.nat2}}",
+        "{{event.user.nat3}}"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:27:10.562Z"
+  },
+  {
+    "id": "trivia-f2ga4d",
+    "formData": {
+      "question": "There are documents for many nations, (three possible ones are)",
+      "good": "Skip question",
+      "bad": [
+        "{{event.user.nat1}}",
+        "{{event.user.nat2}}",
+        "{{event.user.nat3}}"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:27:10.562Z"
+  },
+   {
+    "id": "trivia-6Jc6T4",
+    "formData": {
+      "question": "what kind of documents are you interested in?",
+      "good": "NEXT QUESTION",
+      "bad": [
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:27:10.562Z"
+  },
+  {
+    "id": "trivia-az2rq5",
+    "formData": {
+      "question": "There is one relevant type",
+      "good": "Skip question",
+      "bad": [
+        "{{event.user.type1}}"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:27:10.562Z"
+  },
+  {
+    "id": "trivia-4as3e8",
+    "formData": {
+      "question": "There are two relevant types",
+      "good": "Skip question",
+      "bad": [
+        "{{event.user.type1}}",
+        "{{event.user.type2}}"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:27:10.562Z"
+  },
+  {
+    "id": "trivia-a3s13t",
+    "formData": {
+      "question": "There are three relevant types",
+      "good": "Skip question",
+      "bad": [
+        "{{event.user.type1}}",
+        "{{event.user.type2}}",
+        "{{event.user.type3}}"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:27:10.562Z"
+  },
+  {
+    "id": "trivia-q7d41h",
+    "formData": {
+      "question": "There are many relevant types, (these are three of those)",
+      "good": "Skip question",
+      "bad": [
+        "{{event.user.type1}}",
+        "{{event.user.type2}}",
+        "{{event.user.type3}}"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:27:10.562Z"
+  },
+  {
+    "id": "trivia-wex2r4",
+    "formData": {
+      "question": "the found language is {{event.user.lang}}",
+      "good": "Back to search another language",
+      "bad": [
+        "accept {{event.user.lang}}"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:27:10.562Z"
+  },
+  {
+    "id": "trivia-qrz1r6",
+    "formData": {
+      "question": "the found nation is {{event.user.nation}}",
+      "good": "Back to search another nation",
+      "bad": [
+        "accept {{event.user.nation}}"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:27:10.562Z"
+  },
+  {
+    "id": "trivia-ske4t2",
+    "formData": {
+      "question": "the found type is {{event.user.type}}",
+      "good": "Back to search for the appropriate type",
+      "bad": [
+        "accept {{event.user.type}}"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-08T18:27:10.562Z"
+  }
+
+]

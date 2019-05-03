@@ -1,0 +1,75 @@
+[
+  {
+    "id": "text-7jyHxa",
+    "formData": {
+      "text": "hello! we are going to help you find the document you want",
+      "typing": true,
+      "done": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-09T21:36:52.391Z"
+  },
+  {
+    "id": "text-~Y4F~Z",
+    "formData": {
+      "text": "You rock! That was the good answer",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-12T21:59:56.693Z"
+  },
+  {
+    "id": "text-cTkerJ",
+    "formData": {
+      "text": "There is no document relevant to your search, try again",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-12T22:00:55.757Z"
+  },
+  {
+    "id": "text-zss1Nr",
+    "formData": {
+      "text": "The game ended, you scored {{state.score}} / {{state.count}}",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-12T22:03:04.736Z"
+  },
+  {
+    "id": "text-kFIEdO",
+    "formData": {
+      "text": "Ask what do you want from our documents",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-02-12T22:43:25.093Z"
+  },
+  {
+    "id": "text-OVkx7u",
+    "formData": {
+      "text": "There is no language for your search",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-19T16:40:05.735Z"
+  },
+  {
+    "id": "text-Vx8lPY",
+    "formData": {
+      "text": "There is no nation for your search",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-19T18:38:18.331Z"
+  },
+  {
+    "id": "text-lI61SA",
+    "formData": {
+      "text": "There is no type relevant to your search",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-22T11:47:05.055Z"
+  }
+]

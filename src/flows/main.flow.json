@@ -1,0 +1,331 @@
+{
+  "version": "0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "rjamSg7LNJbzrEoftkYxQ",
+      "name": "entry",
+      "onEnter": [
+        "getAllJsonInternetFileAndStore {}",
+        "say #!text-7jyHxa"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "ask-language-question"
+        }
+      ]
+    },
+    {
+      "id": "4a2d137247",
+      "name": "ask-question",
+      "next": [
+        {
+          "condition": "state.exists === true",
+          "node": "check-url"
+        },
+        {
+          "condition": "true",
+          "node": "bad-answer"
+        }
+      ],
+      "onEnter": [
+        "say #!text-kFIEdO"
+      ],
+      "onReceive": [
+        "checkAllDataListForInput {}"
+      ]
+    },
+    {
+      "id": "8bfc3b60fd",
+      "name": "good-answer",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!text-~Y4F~Z"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "1f9ae3ab6f",
+      "name": "bad-answer",
+      "next": [
+        {
+          "condition": "true",
+          "node": "next-question"
+        }
+      ],
+      "onEnter": [
+        "say #!text-cTkerJ"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "11219c5913",
+      "name": "next",
+      "next": [
+        {
+          "condition": "state.count >= 3",
+          "node": "over"
+        },
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "25e5cd0fbe",
+      "name": "over",
+      "next": [],
+      "onEnter": [
+        "say #!text-zss1Nr"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "001c3d992a",
+      "name": "next-question",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ask-question"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "b0d5eeb166",
+      "name": "check-url",
+      "next": [
+        {
+          "condition": "state.urlExists === true",
+          "node": "show-action-button"
+        },
+        {
+          "condition": "state.urlExists ===false",
+          "node": "next-question"
+        }
+      ],
+      "onEnter": [
+        "showQuestion {}"
+      ],
+      "onReceive": [
+        "checkTitleToSHowUrl {}"
+      ]
+    },
+    {
+      "id": "0dcfc4618a",
+      "name": "ask-language-question",
+      "next": [
+        {
+          "condition": "state.buttonLangPressed===true",
+          "node": "ask-nation-question"
+        },
+        {
+          "condition": "state.langExists===true",
+          "node": "accept-language"
+        },
+        {
+          "condition": "state.nextQuestion===true",
+          "node": "ask-nation-question"
+        },
+        {
+          "condition": "state.langExists===false",
+          "node": "next-question1"
+        }
+      ],
+      "onEnter": [
+        "showQuestionforLanguage {}"
+      ],
+      "onReceive": [
+        "checkQuestionForLanguage {}"
+      ]
+    },
+    {
+      "id": "da51157e1e",
+      "name": "next-question1",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ask-language-question"
+        }
+      ],
+      "onEnter": [
+        "say #!text-OVkx7u"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "a378e56630",
+      "name": "ask-nation-question",
+      "next": [
+        {
+          "condition": "state.buttonNationPressed===true",
+          "node": "ask-type-question"
+        },
+        {
+          "condition": "state.NationExists===true",
+          "node": "accept-nation"
+        },
+        {
+          "condition": "state.nextQuestion2===true",
+          "node": "ask-type-question"
+        },
+        {
+          "condition": "state.NationExists===false",
+          "node": "next-question2"
+        }
+      ],
+      "onEnter": [
+        "showQuestionforNation {}"
+      ],
+      "onReceive": [
+        "checkQuestionForNation {}"
+      ]
+    },
+    {
+      "id": "04f14f32d3",
+      "name": "next-question2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ask-nation-question"
+        }
+      ],
+      "onEnter": [
+        "say #!text-Vx8lPY"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "90478f0c83",
+      "name": "ask-type-question",
+      "next": [
+        {
+          "condition": "state. buttonTypePressed===true",
+          "node": "ask-question"
+        },
+        {
+          "condition": "state.typeExists === true",
+          "node": "accept-type"
+        },
+        {
+          "condition": "state.nextQuestion3===true",
+          "node": "ask-question"
+        },
+        {
+          "condition": "state.typeExists ===false",
+          "node": "next-question3"
+        }
+      ],
+      "onEnter": [
+        "showQuestionforType {}"
+      ],
+      "onReceive": [
+        "checkQuestionForType {}"
+      ]
+    },
+    {
+      "id": "1c6d9f12a6",
+      "name": "next-question3",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ask-type-question"
+        }
+      ],
+      "onEnter": [
+        "say #!text-lI61SA"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "69cd587cc3",
+      "name": "show-action-button",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "showUrl {}",
+        "say #!builtin_action-button-HhsK~7"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "6add4ad9b1",
+      "name": "accept-language",
+      "next": [
+        {
+          "condition": "state.acceptLang===true",
+          "node": "ask-nation-question"
+        },
+        {
+          "condition": "state.acceptLang===false",
+          "node": "ask-language-question"
+        }
+      ],
+      "onEnter": [
+        "showQuestionfor {}"
+      ],
+      "onReceive": [
+        "checkQuestionFor {}"
+      ]
+    },
+    {
+      "id": "377a2e8835",
+      "name": "accept-nation",
+      "next": [
+        {
+          "condition": "state.acceptNation===true",
+          "node": "ask-type-question"
+        },
+        {
+          "condition": "state.acceptNation===false",
+          "node": "ask-nation-question"
+        }
+      ],
+      "onEnter": [
+        "showQuestionfor2 {}"
+      ],
+      "onReceive": [
+        "checkQuestionFor2 {}"
+      ]
+    },
+    {
+      "id": "723cc00991",
+      "name": "accept-type",
+      "next": [
+        {
+          "condition": "state.acceptType===true",
+          "node": "ask-question"
+        },
+        {
+          "condition": "state.acceptType===false",
+          "node": "ask-type-question"
+        }
+      ],
+      "onEnter": [
+        "showQuestionfor3 {}"
+      ],
+      "onReceive": [
+        "checkQuestionFor3 {}"
+      ]
+    }
+  ]
+}
